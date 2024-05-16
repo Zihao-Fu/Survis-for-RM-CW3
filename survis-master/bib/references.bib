@@ -1,0 +1,103 @@
+@inproceedings{calciati2020automatically,
+  abstract={Developers continuously update their Android apps to keep up with competitors in the market. Such constant updates do not bother end users, since by default the Android platform automatically pushes the most recent compatible release on the device, unless there are major changes in the list of requested permissions that users have to explicitly grant. The lack of explicit user’s approval for each application update, however, may lead to significant risks for the end user, as the new release may include new subtle behaviors which may be privacy-invasive. The introduction of permission groups in the Android permission model makes this problem even worse: if a user gives a single permission within a group, the application can silently request further permissions in this group with each update—without having to ask the user. In this paper, we explain the threat that permission groups may pose for the privacy of Android users. We run an empirical study on 2,865,553 app releases, and we show that in a representative app store more than ~17% of apps request at least once in their lifetime new dangerous permissions that the operating system grants without any user’s approval. Our analyses show that apps actually use over 56% of such automatically granted permissions, although most of their descriptions do not explicitly explain for what purposes. Finally, our manual inspection reveals clear abuses of apps that leak sensitive data such as user’s accurate location, list of contacts, history of phone calls, and emails which are protected by permissions that the user never explicitly acknowledges.},
+  keywords={type:privacy, Android apps, permission groups, automatic updates, empirical study, data leaks, user permissions},
+  title={Automatically granted permissions in Android apps: An empirical study on their prevalence and on the potential threats for privacy},
+  author={Calciati, Paolo and Kuznetsov, Konstantin and Gorla, Alessandra and Zeller, Andreas},
+  booktitle={Proceedings of the 17th International Conference on Mining Software Repositories},
+  pages={114--124},
+  year={2020}
+}
+@inproceedings{do2014enhancing,
+  abstract={Android mobile devices are becoming a popular alternative to computers. The rise in the number of tasks performed on mobile devices means sensitive information is stored on the devices. Consequently, Android devices are a potential vector for criminal exploitation. Existing research on enhancing user privacy on Android devices can generally be classified as Android modifications. These solutions often require operating system modifications, which significantly reduce their potential. This research proposes the use of permissions removal, wherein a reverse engineering process is used to remove an app’s permission to a resource. The repackaged app will run on all devices the original app supported. Our findings that are based on a study of seven popular social networking apps for Android mobile devices indicate that the difficulty of permissions removal may vary between types of permissions and how well-integrated a permission is within an app.},
+  keywords={type:privacy, Android mobile devices, permissions removal, reverse engineering, operating system modifications, criminal exploitation, social networking apps},
+  title={Enhancing user privacy on android mobile devices via permissions removal},
+  author={Do, Quang and Martini, Ben and Choo, Kim-Kwang Raymond},
+  booktitle={2014 47th Hawaii International Conference on System Sciences},
+  pages={5070--5079},
+  year={2014},
+  organization={IEEE}
+}
+@inproceedings{feichtner2020understanding,
+  abstract={Permissions are a key factor in Android to protect users' privacy. As it is often not obvious why applications require certain permissions, developer-provided descriptions in Google Play and third-party markets should explain to users how sensitive data is processed. Reliably recognizing whether app descriptions cover permission usage is challenging due to the lack of enforced quality standards and a variety of ways developers can express privacy-related facts. We introduce a machine learning-based approach to identify critical discrepancies between developer-described app behavior and permission usage. By combining state-of-the-art techniques in natural language processing (NLP) and deep learning, we design a convolutional neural network (CNN) for text classification that captures the relevance of words and phrases in app descriptions in relation to the usage of dangerous permissions. Our system predicts the likelihood that an app requires certain permissions and can warn about descriptions in which the requested access to sensitive user data and system features is textually not represented. We evaluate our solution on 77,000 real-world app descriptions and find that we can identify individual groups of dangerous permissions with a precision between 71% and 93%. To highlight the impact of individual words and phrases, we employ a model explanation algorithm and demonstrate that our technique can successfully bridge the semantic gap between described app functionality and its access to security- and privacy-sensitive resources.},
+  keywords={type:permissions, convolutional neural network (CNN), text classification, privacy-sensitive resources},
+  title={Understanding privacy awareness in android app descriptions using deep learning},
+  author={Feichtner, Johannes and Gruber, Stefan},
+  booktitle={Proceedings of the tenth ACM conference on data and application security and privacy},
+  pages={203--214},
+  year={2020}
+}
+@article{he2019dynamic,
+  abstract={The third-party libraries are reusable resources that are widely employed in Android Apps. While the third-party libraries provide a variety of functions, they bring serious security and privacy problems. The third-party libraries and the host Apps run in the same process and share the same permissions. Whether the third-party libraries are compliant with privacy policies is out of the control of App developers. In this work, we identify four types of privacy leakage paths inside Apps with case studies. Based on the Xposed framework, we propose a fine-grained and dynamic privacy-leakage analysis tool to analyze the privacy leakage behaviors of the third-party libraries in real time. Our tool can first identify the third-party libraries inside Apps, and then extracts call chains of the privacy source and sink functions during the execution of Apps, and finally evaluate the risks of privacy leaks of the third-party libraries according to the privacy leakage paths. We evaluate our tool over 150 popular Apps, collecting 1909 privacy data related call chains. We find that many third-party libraries access to private information. Moreover, they set up direct network connections to remote servers, which suggests that the third-party libraries pose a great privacy risk. The experiments results show that our tool can achieve real-time, fine-grained and dynamic privacy leakage analysis on Android Apps.},
+  keywords={type:Privacy leakage, Third-party libraries, Xposed framework, Real-time analysis},
+  title={Dynamic privacy leakage analysis of Android third-party libraries},
+  author={He, Yongzhong and Yang, Xuejun and Hu, Binghui and Wang, Wei},
+  journal={Journal of Information Security and Applications},
+  volume={46},
+  pages={259--270},
+  year={2019},
+  publisher={Elsevier}
+}
+@inproceedings{kumar2018context,
+  abstract={Android security has been a topic of concern lately in both academic and industrial research because of various occurrences of privacy leaks and security breaches on these devices. The security model of Android operating system is based on a permission-based mechanism which limits the access of any third-party application to critical resources of the mobile device. This mechanism has been broadly condemned for its coarse-grained control over system resources and inappropriate authorization of permissions by application developers, advertisers, and end users. This paper inspects the emerging issues in permission-based security mechanisms and proposes the concept of context-aware dynamic permissions model (CAPM) for Android systems. The proposed model deals with the dynamic enforcement of permissions to a particular application according to the defined context without user’s intervention. Our model assigns profiles to different applications based on their functional groups and these profiles contain a set of permissions with some associated context. The context can be based upon system or sensor sources. This way, if the data is private or confidential, the permissions set ought to be stricter than usual. Our concept is unique as it associates context with permissions as opposed to the existing model of assigning permissions according to applications' functionality. This concept can be proved helpful in protecting user’s private data from being leaked simply by modifying the existing resource access mechanism.},
+  keywords={type:security, privacy leaks, permissions mechanism, access control, context aware permission based security},
+  title={Context aware dynamic permission model: a retrospect of privacy and security in android system},
+  author={Kumar, Sumit and Shanker, Ravi and Verma, Sahil},
+  booktitle={2018 International Conference on Intelligent Circuits and Systems (ICICS)},
+  pages={324--329},
+  year={2018},
+  organization={IEEE}
+}
+@article{momen2020app,
+  abstract={Smartphone apps that run on Android devices can access many types of personal information. Such information can be used to identify, profile and track the device users when mapped into digital identity attributes. This article presents a model of identifiability through access to personal data protected by the Android access control mechanism called permissions. We populate partial identities with attributes related to permission-protected personal data, and then show how apps accumulate such attributes in a longitudinal study that was carried out over several months. We found that apps’ successive access to permissions accumulates such identity attributes, where apps show different interest in such attributes.},
+  keywords={type:Privacy, Android, Apps, Identification, Digital Identity, Survey and Permissions},
+  title={App-generated digital identities extracted through android permission-based data access-a survey of app privacy},
+  author={Momen, Nurul and Fritsch, Lothar},
+  year={2020},
+  publisher={Gesellschaft f{\"u}r Informatik eV}
+}
+@article{ntantogian2014evaluating,
+  abstract={In this paper, we investigate and evaluate through experimental analysis the possibility of recovering authentication credentials of mobile applications from the volatile memory of Android mobile devices. Throughout the carried experiments and analysis, we have, exclusively, used open-source and free forensic tools. Overall, the contribution of this paper is threefold. First, it thoroughly examines thirteen (13) mobile applications, which represent four common application categories that elaborate sensitive users’ data, whether it is possible to recover authentication credentials from the physical memory of mobile devices, following thirty (30) different scenarios. Second, it explores in the considered applications, if we can discover patterns and expressions that indicate the exact position of authentication credentials in a memory dump. Third, it reveals a set of critical observations regarding the privacy of Android mobile applications and devices.},
+  keywords={type:security, Authentication credentials recovery, Android mobile devices, Memory forensic analysis},
+  title={Evaluating the privacy of Android mobile applications under forensic analysis},
+  author={Ntantogian, Christoforos and Apostolopoulos, Dimitris and Marinakis, Giannis and Xenakis, Christos},
+  journal={Computers \& Security},
+  volume={42},
+  pages={66--76},
+  year={2014},
+  publisher={Elsevier}
+}
+@article{shrivastava2021android,
+  abstract={An android application requires specific permissions from the user to access the system resources and perform required functionalities. Recently, the android market has experienced exponential growth, which leads to malware applications. These applications are purposefully developed by hackers to access private data of the users and adversely affect the application usability. A suitable tool to detect malware is urgently needed, as malware may harm the user. As both malware and clean applications require similar types of permissions, so it becomes a very challenging task to differentiate between them. A novel algorithm is proposed to identify the malware-based applications by probing the permission patterns. The proposed method uses the k-means algorithm to quarantine the malware application by obtaining permission clusters. An efficiency of 90% (approx.) is attained for malicious behaviour, which validates this work. This work substantiates the use of application permissions for potential applications in android malware detection.},
+  keywords={type:permission, android app analysis, data leakage assessment, machine learning, malware data analysis, reverse engineering},
+  title={Android application behavioural analysis for data leakage},
+  author={Shrivastava, Gulshan and Kumar, Prabhat},
+  journal={Expert Systems},
+  volume={38},
+  number={1},
+  pages={e12468},
+  year={2021},
+  publisher={Wiley Online Library}
+}
+@article{wang2019implications,
+  abstract={Many smartphone apps routinely gather various private user data and send them to advertisers. Despite recent study on protection mechanisms and analysis on apps’ behavior, the understanding of the consequences of such privacy losses remains limited. In this paper, we investigate how much an advertiser can infer about users’ social and community relationships. After one month’s user study involving about 190 most popular Android apps, we find that an advertiser can infer 90% of the social relationships. We further propose a privacy leakage inference framework and use real mobility traces and Foursquare data to quantify the consequences of privacy leakage. We find that achieving 90% inference accuracy of the social and community relationships requires merely 3 weeks’ user data. Finally, we present a real-time privacy leakage visualization tool that captures and displays the spatial–temporal characteristics of the leakages. The discoveries underscore the importance of early adoption of privacy protection mechanisms.},
+  keywords={type:Privacy leakage, Social relationships inference, Real-time visualization tool, Android apps},
+  title={Implications of smartphone user privacy leakage from the advertiser's perspective},
+  author={Wang, Yan and Chen, Yingying and Ye, Fan and Liu, Hongbo and Yang, Jie},
+  journal={Pervasive and mobile computing},
+  volume={53},
+  pages={13--32},
+  year={2019},
+  publisher={Elsevier}
+}
+@article{zhang2014permission,
+  abstract={The android platform adopts permissions to protect sensitive resources from untrusted apps. However, after permissions are granted by users at install time, apps could use these permissions (sensitive resources) with no further restrictions. Thus, recent years have witnessed the explosion of undesirable behaviors in Android apps. An important part in the defense is the accurate analysis of Android apps. However, traditional syscall-based analysis techniques are not well-suited for Android, because they could not capture critical interactions between the application and the Android system. This paper presents VetDroid, a dynamic analysis platform for generally analyzing sensitive behaviors in Android apps from a novel permission use perspective. VetDroid proposes a systematic permission use analysis technique to effectively construct permission use behaviors, i.e., how applications use permissions to access (sensitive) system resources, and how these acquired permission-sensitive resources are further utilized by the application. With permission use behaviors, security analysts can easily examine the internal sensitive behaviors of an app. Using real-world Android malware, we show that VetDroid can clearly reconstruct fine-grained malicious behaviors to ease malware analysis. We further apply VetDroid to 1249 top free apps in Google Play. VetDroid can assist in finding more information leaks than TaintDroid, a state-of-the-art technique. In addition, we show how we can use VetDroid to analyze fine-grained causes of information leaks that TaintDroid cannot reveal. Finally, we show that VetDroid can help to identify subtle vulnerabilities in some (top free) applications otherwise hard to detect.},
+  keywords={type:Security, permission use analysis, vetting undesirable behaviors, android behavior representation},
+  title={Permission use analysis for vetting undesirable behaviors in android apps},
+  author={Zhang, Yuan and Yang, Min and Yang, Zhemin and Gu, Guofei and Ning, Peng and Zang, Binyu},
+  journal={IEEE transactions on information forensics and security},
+  volume={9},
+  number={11},
+  pages={1828--1842},
+  year={2014},
+  publisher={IEEE}
+}
